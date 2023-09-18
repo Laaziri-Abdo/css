@@ -1,0 +1,150 @@
+body{
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+    /* background-repeat: no-repeat; */
+    width: 97%;
+    margin: 20px;
+}
+h1{
+    color: darkmagenta;
+    font-size: 35px;
+    text-align: start;
+}
+.p{
+    color: blueviolet;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.div{
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one one ."
+    ". tree tree"
+}
+.one{
+    grid-area: one;
+}
+.tow{
+    grid-area: tow;
+}
+.tree{
+    grid-area: tree;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.star{
+    height: 60px;
+    border-radius: 4px;
+    background-color: rgb(134, 107, 159);
+    display: grid;
+    grid-template-columns: 120px 250px;
+    margin: 5px;
+}
+.abo{
+    position: relative;
+    bottom: 8px;
+}
+h5{
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    margin-top: 20px;
+}
+.container2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-size: 50%;
+}
+.card{
+    background-color: rgb(164, 91, 233);
+    width: 400px;
+    margin: 5px;
+    height: 250px;
+    border-radius: 4px;
+    color: rgb(237, 230, 230);
+    padding: 20px;
+}
+.img{
+    border-radius: 90%;
+ 
+}
+.ver{
+    color: brown;
+    position: relative;
+    left: 30%;
+    bottom: 90px;
+    opacity: 50%;
+}
+.nom{
+    position: relative;
+    left: 30%;
+    bottom: 80px;
+}
+h6{
+    margin: 15px;
+    text-align: start;
+    font-size: 15px;
+    position: relative;
+    bottom: 70px;
+    opacity: 70%;
+}
+#irenne{
+    position: relative;
+    top: 30px;
+}
+#anne{
+    position: relative;
+    top: 60px;
+}
+@media (max-width:700px) {
+    body{
+        background-image: url(./images/bg-pattern-top-mobile.svg);
+    }
+    .div{
+        grid-template-columns: 1fr;
+        grid-template-areas: "one" "tow" "tree";
+    }
+    .star{
+        width: 370px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h5{
+        text-align: center;
+        width: 370px;
+    }
+    h1{
+        text-align: center;
+        width: 370px;
+    }
+    img.abo{
+        position: relative;
+        top: 30px;
+    }
+    .p{
+        text-align: center;
+        position: relative;
+        left: 20px;
+    }
+    
+}
+
+
+
+
